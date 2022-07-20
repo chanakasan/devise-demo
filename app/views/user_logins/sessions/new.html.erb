@@ -1,5 +1,9 @@
 <h2>Log in</h2>
 
+<%= link_to "Log in with Azure AD",     
+            user_login_azure_activedirectory_v2_omniauth_authorize_path,
+            class: 'btn btn-outline-primary btn-lg btn-block', method: :post %>
+
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
   <div class="field">
     <%= f.label :email %><br />
